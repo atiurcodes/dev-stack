@@ -1,10 +1,22 @@
-import React from 'react';
-
+import bannerImage from './assets/banner-stack.png'
 const Banner = () => {
     return (
-        <div>
-            
-        </div>
+        <section className='container mx-auto px-4 md:flex md:items-center'>
+            <div className='flex-1 pt-4'>
+                <h1 className='text-text-primary font-bold text-3xl text-center md:text-start md:text-6xl pb-1'>Build Your Ideal</h1>
+                <h2 className='font-bold text-4xl md:text-6xl text-center md:text-start brand-color md:pb-8'>Development Stack</h2>
+                <p className='text-text-secondary md:text-xl text-center md:text-start leading-6 md:leading-8 py-4 md:py-0'>Explore frontend, backend, database, and tooling options,
+                    compare them side by side, and put together the stack that fits your
+                    next project.</p>
+                <div className='flex justify-center md:justify-start gap-5 md:py-8'>
+                    <button className='btn brand-bg font-semibold text-white hover:opacity-90 transition duration-200'>Explore Technologies</button>
+                    <button type="submit" className="btn text-text-secondary hover:brand-bg hover:opacity-90 hover:text-white transition duration-200">Learn More</button>
+                </div>
+            </div>
+            <div className='flex-1 flex justify-center'>
+                <img src={bannerImage} alt="" className='w-full max-w-md' />
+            </div>
+        </section>
     );
 };
 
