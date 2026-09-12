@@ -1,6 +1,7 @@
 import type { Dispatch, SetStateAction } from "react";
 import type { TechnologyType } from "../TechnologiesType";
 import SelectedTechnologiesCard from "./SelectedTechnologiesCard";
+import { toast } from "react-toastify";
 
 export interface SelectedTechnologiesProps {
     selectedTechnologies: TechnologyType[];
@@ -10,6 +11,7 @@ export interface SelectedTechnologiesProps {
 export default function SelectedTechnologies({ selectedTechnologies, setSelectedTechnologies }: SelectedTechnologiesProps) {
     const handleRemoveAllButton = (): void => {
         setSelectedTechnologies([]);
+        toast.info("All selected technologies have been removed.");
     }
     return (
         <div className="md:col-span-3 border border-gray-100 p-6 rounded-xl shadow-sm bg-base-100">

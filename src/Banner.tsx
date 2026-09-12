@@ -11,7 +11,7 @@ const Banner = () => {
                         next project.</p>
                     <div className='flex flex-wrap justify-center md:justify-start gap-4 md:gap-5 mt-2 md:py-8'>
                         <button className='btn brand-bg font-semibold text-white hover:opacity-90 transition duration-200'>Explore Technologies</button>
-                        <button type="submit" className="btn text-text-secondary hover:brand-bg hover:opacity-90 hover:text-white transition duration-200">Learn More</button>
+                        <button className="btn border border-text-secondary text-text-secondary hover:bg-slate-100 hover:border-slate-400 transition duration-200">Learn More</button>
                     </div>
                 </div>
                 <div className='flex-1 flex justify-center'>

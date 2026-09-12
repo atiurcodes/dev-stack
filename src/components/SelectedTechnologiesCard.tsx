@@ -1,6 +1,7 @@
 import type { Dispatch, SetStateAction } from "react";
 import { IoClose } from "react-icons/io5";
 import type { TechnologyType } from "../TechnologiesType";
+import { toast } from "react-toastify";
 
 
 export interface SelectedTechnologiesCardProps {
@@ -13,6 +14,7 @@ export default function SelectedTechnologiesCard({ selectedTechnology, selectedT
     const handleRemoveStackButton = (selectedTechnology: TechnologyType): void => {
         const remainingTechnologies = selectedTechnologies.filter(tech => tech.name !== selectedTechnology.name);
         setSelectedTechnologies(remainingTechnologies);
+        toast.info(`${selectedTechnology.name} has been removed.`);
     }
     return (
         <div className="flex justify-between items-center border border-gray-100 rounded-xl px-4 py-2">
