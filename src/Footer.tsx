@@ -88,10 +88,10 @@ const Footer = () => {
                 <div className="divider"></div>
 
                 {/* Copyright */}
-                <div className="md:flex items-center justify-between py-6 text-sm text-gray-500">
+                <div className="text-center space-y-1 md:flex items-center justify-between py-6 text-sm text-gray-500">
                     <p>© 2026 Dev Stack. All rights reserved.</p>
 
-                    <ul className="flex gap-4">
+                    <ul className="flex justify-center gap-4">
                         <li>Privacy</li>
                         <li>Terms</li>
                     </ul>
