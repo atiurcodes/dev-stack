@@ -1,9 +1,8 @@
 @import "tailwindcss";
-@plugin "daisyui";
 
 @theme {
-  --color-text-primary: #0F172A;
-  --color-text-secondary: #475569;
+  --color-primary: #0F172A;
+  --color-secondary: #475569;
 }
 
 @utility brand-color {

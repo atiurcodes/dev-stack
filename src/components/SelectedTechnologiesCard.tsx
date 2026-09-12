@@ -12,7 +12,7 @@ export interface SelectedTechnologiesCardProps {
 
 export default function SelectedTechnologiesCard({ selectedTechnology, selectedTechnologies, setSelectedTechnologies }: SelectedTechnologiesCardProps) {
     const handleRemoveStackButton = (selectedTechnology: TechnologyType): void => {
-        const remainingTechnologies = selectedTechnologies.filter(tech => tech.name !== selectedTechnology.name);
+        const remainingTechnologies = selectedTechnologies.filter(tech => tech.id !== selectedTechnology.id);
         setSelectedTechnologies(remainingTechnologies);
         toast.info(`${selectedTechnology.name} has been removed.`);
     }
@@ -21,11 +21,11 @@ export default function SelectedTechnologiesCard({ selectedTechnology, selectedT
             <div className="flex justify-center gap-2">
                 <img src={selectedTechnology.icon} alt={selectedTechnology.name} width={50} height={50} />
                 <div>
-                    <h2 className="text-xl font-semibold text-[#0F172A]">{selectedTechnology.name}</h2>
-                    <span className="text-sm text-[#64748B]">{selectedTechnology.category}</span>
+                    <h2 className="text-xl font-semibold text-primary">{selectedTechnology.name}</h2>
+                    <span className="text-sm text-secondary">{selectedTechnology.category}</span>
                 </div>
             </div>
-            <span className="cursor-pointer text-gray-500 hover:text-red-500 transition-colors duration-200 shrink-0"
+            <span className="cursor-pointer text-secondary hover:text-red-500 transition-colors duration-200 shrink-0"
                 onClick={() => handleRemoveStackButton(selectedTechnology)}><IoClose size={35} /></span>
         </div>
     )

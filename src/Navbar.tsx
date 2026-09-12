@@ -24,7 +24,7 @@ const Navbar = () => {
                     </button>
 
                     {/* Logo */}
-                    <div className="shrink-0 md:order-none">
+                    <div className="shrink-0 md:order-0">
                         <img
                             src={logo}
                             alt="Dev-Stack"
@@ -39,19 +39,19 @@ const Navbar = () => {
                                 Home
                             </li>
 
-                            <li className="text-text-secondary font-semibold cursor-pointer hover:text-red-500 transition-colors duration-300">
+                            <li className="text-secondary font-semibold cursor-pointer hover:text-red-500 transition-colors duration-300">
                                 Technologies
                             </li>
 
-                            <li className="text-text-secondary font-semibold cursor-pointer hover:text-red-500 transition-colors duration-300">
+                            <li className="text-secondary font-semibold cursor-pointer hover:text-red-500 transition-colors duration-300">
                                 Projects
                             </li>
 
-                            <li className="text-text-secondary font-semibold cursor-pointer hover:text-red-500 transition-colors duration-300">
+                            <li className="text-secondary font-semibold cursor-pointer hover:text-red-500 transition-colors duration-300">
                                 About
                             </li>
 
-                            <li className="text-text-secondary font-semibold cursor-pointer hover:text-red-500 transition-colors duration-300">
+                            <li className="text-secondary font-semibold cursor-pointer hover:text-red-500 transition-colors duration-300">
                                 Contact
                             </li>
                         </ul>
@@ -61,7 +61,7 @@ const Navbar = () => {
                     <div className="hidden md:flex items-center gap-3 lg:gap-5">
                         <button
                             type="button"
-                            className="text-text-secondary font-semibold cursor-pointer px-4 py-2 rounded-2xl hover:bg-red-500 hover:text-white transition-all duration-300"
+                            className="text-secondary font-semibold cursor-pointer px-4 py-2 rounded-2xl hover:bg-red-500 hover:text-white transition-all duration-300"
                         >
                             Sign In
                         </button>
@@ -78,7 +78,7 @@ const Navbar = () => {
                     <div className="md:hidden flex items-center gap-1">
                         <button
                             type="button"
-                            className="text-text-secondary font-semibold cursor-pointer px-2 py-2 text-sm rounded-xl hover:bg-red-500 hover:text-white transition-all duration-300"
+                            className="text-secondary font-semibold cursor-pointer px-2 py-2 text-sm rounded-xl hover:bg-red-500 hover:text-white transition-all duration-300"
                         >
                             Sign In
                         </button>
@@ -116,19 +116,19 @@ const Navbar = () => {
                             Home
                         </li>
 
-                        <li className="text-text-secondary font-semibold cursor-pointer hover:text-red-500 transition-colors duration-300">
+                        <li className="text-secondary font-semibold cursor-pointer hover:text-red-500 transition-colors duration-300">
                             Technologies
                         </li>
 
-                        <li className="text-text-secondary font-semibold cursor-pointer hover:text-red-500 transition-colors duration-300">
+                        <li className="text-secondary font-semibold cursor-pointer hover:text-red-500 transition-colors duration-300">
                             Projects
                         </li>
 
-                        <li className="text-text-secondary font-semibold cursor-pointer hover:text-red-500 transition-colors duration-300">
+                        <li className="text-secondary font-semibold cursor-pointer hover:text-red-500 transition-colors duration-300">
                             About
                         </li>
 
-                        <li className="text-text-secondary font-semibold cursor-pointer hover:text-red-500 transition-colors duration-300">
+                        <li className="text-secondary font-semibold cursor-pointer hover:text-red-500 transition-colors duration-300">
                             Contact
                         </li>
                     </ul>
