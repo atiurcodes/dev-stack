@@ -1,6 +1,7 @@
 import { use, useState } from "react";
 import type { TechnologyType } from "../TechnologiesType";
 import AvailableTechnologies from "./AvailableTechnologies";
+import SelectedTechnologies from "./SelectedTechnologies";
 
 export interface TechnologiesProps {
     fetchTechnologies: Promise<TechnologyType[]>;
@@ -21,7 +22,7 @@ export default function Technologies({ fetchTechnologies }: TechnologiesProps) {
             <div className="grid grid-cols-1 md:grid-cols-12 gap-10 items-start">
                 <AvailableTechnologies AllTechnologies={AllTechnologies} setSelectedTechnologies={setSelectedTechnologies}
                     selectedTechnologies={selectedTechnologies} />
-                {/* <SelectedTechnologies selectedTechnologies={selectedTechnologies} setSelectedTechnologies={setSelectedTechnologies} /> */}
+                <SelectedTechnologies selectedTechnologies={selectedTechnologies} setSelectedTechnologies={setSelectedTechnologies} />
             </div>
         </div>
     )
