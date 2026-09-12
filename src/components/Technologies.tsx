@@ -19,7 +19,7 @@ export default function Technologies({ fetchTechnologies }: TechnologiesProps) {
                     Technologies</span>
                 <p className="text-text-secondary">Pick one technology per category to build your ideal stack.</p>
             </div>
-            <div className="grid grid-cols-1 md:grid-cols-12 gap-10 items-start">
+            <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 items-start">
                 <AvailableTechnologies AllTechnologies={AllTechnologies} setSelectedTechnologies={setSelectedTechnologies}
                     selectedTechnologies={selectedTechnologies} />
                 <SelectedTechnologies selectedTechnologies={selectedTechnologies} setSelectedTechnologies={setSelectedTechnologies} />

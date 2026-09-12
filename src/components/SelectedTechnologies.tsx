@@ -14,9 +14,9 @@ export default function SelectedTechnologies({ selectedTechnologies, setSelected
         toast.info("All selected technologies have been removed.");
     }
     return (
-        <div className="md:col-span-3 border border-gray-100 p-6 rounded-xl shadow-sm bg-base-100">
+        <div className="lg:col-span-3 border border-gray-100 p-6 rounded-xl shadow-sm bg-base-100">
             <h2 className="text-[#0F172A] text-xl md:text-3xl font-semibold">Your Stack</h2>
-            <p className="text-[#94A3B8] text-xl py-2">{selectedTechnologies.length ? `${selectedTechnologies.length} technology selected.` :
+            <p className="text-[#94A3B8] text-xl py-2">{selectedTechnologies.length ? `${selectedTechnologies.length} technologies selected.` :
                 'No technologies selected yet.'}</p>
             <div className="flex flex-col gap-2 pt-2 mb-6">
                 {selectedTechnologies.length === 0 ? (
