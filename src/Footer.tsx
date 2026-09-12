@@ -4,7 +4,7 @@ const Footer = () => {
     return (
         <section>
             {/* <div className="divider"></div> */}
-            <footer className="container mx-auto px-4">
+            <footer className="container mx-auto px-4 pt-20">
 
                 {/* Desktop Footer Links */}
                 <div className="hidden md:grid grid-cols-5 gap-8 border-gray-200 pb-8">
