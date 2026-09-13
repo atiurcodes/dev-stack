@@ -60,7 +60,7 @@ We use JSX in React because it makes UI code easier to read and understand. It a
 
 `useState` is a React Hook used to create and manage state inside a functional component.
 
-When a user update it's value, the state is updated and React automatically re-renders the related UI.
+When a user updates it's value, the state is updated and React automatically re-renders the related UI.
 
 
 ## 4. What is the useEffect hook, and why is it useful for loading JSON data?
@@ -104,7 +104,7 @@ The child can then call that function when an event happens.
 
 ## 📁 Project Structure
 
-```text
+```
 src/
 ├── assets/
 ├── components/
@@ -121,10 +121,6 @@ src/
 ├── TechnologiesType.ts
 └── main.tsx
 ```
-
-> The exact folder structure may vary depending on the final project organization.
-
----
 
 ## 🎯 Main Functionalities
 
