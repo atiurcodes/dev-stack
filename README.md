@@ -102,26 +102,6 @@ To communicate from child to parent, the parent can pass a **callback function**
 
 The child can then call that function when an event happens.
 
-## 📁 Project Structure
-
-```
-src/
-├── assets/
-├── components/
-│   ├── AvailableTechnologies.tsx
-│   ├── AvailableTechnologiesCard.tsx
-│   ├── SelectedTechnologies.tsx
-│   ├── SelectedTechnologiesCard.tsx
-│   ├── Navbar.tsx
-│   ├── Banner.tsx
-│   └── Footer.tsx
-├── constants/
-├── data/
-├── Technologies.tsx
-├── TechnologiesType.ts
-└── main.tsx
-```
-
 ## 🎯 Main Functionalities
 
 ### Add to Stack
