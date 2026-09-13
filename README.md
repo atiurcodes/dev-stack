@@ -1,6 +1,6 @@
 # 🚀 Dev Stack
 
-Dev Stack is a responsive web application that helps developers explore different technologies and build their ideal development stack. Users can browse technologies by category, view their details, and add their preferred technologies to a personal stack.
+Dev Stack is a responsive web application that helps developers explore different technologies and build their ideal development stack. Users can browse technologies and add their preferred technologies to a personal stack.
 
 ## 🌐 Live Website
 
@@ -50,48 +50,18 @@ JSX stands for **JavaScript XML**. It allows us to write HTML-like syntax inside
 
 We use JSX in React because it makes UI code easier to read and understand. It also allows us to combine JavaScript logic with UI structure in the same component.
 
-For example:
-
-```tsx
-function Welcome() {
-    return <h1>Welcome to Dev Stack</h1>;
-}
-```
-
-Here, `<h1>` is JSX syntax.
-
----
-
 ## 2. What is the difference between Props and State?
 
 **Props** are data passed from a parent component to a child component. They are read-only from the child's perspective.
 
 **State** is data managed inside a component that can change over time and cause the component to re-render.
 
-For example, in this project, technology information is passed to `AvailableTechnologiesCard` through props, while the selected technologies are maintained using state.
-
-```text
-Props → Parent component → Child component
-
-State → Data managed inside a component
-```
-
----
-
 ## 3. What is the useState hook, and where do we use it?
 
 `useState` is a React Hook used to create and manage state inside a functional component.
 
-In this project, `useState` is used to store the technologies selected by the user.
+When a user update it's value, the state is updated and React automatically re-renders the related UI.
 
-```tsx
-const [selectedTechnologies, setSelectedTechnologies] =
-    useState<TechnologyType[]>([]);
-```
-
-When a user adds or removes a technology, the state is updated and React automatically re-renders the related UI.
-
----
 
 ## 4. What is the useEffect hook, and why is it useful for loading JSON data?
 
@@ -99,30 +69,11 @@ When a user adds or removes a technology, the state is updated and React automat
 
 When JSON data needs to be fetched after a component renders, `useEffect` can be used to perform that operation.
 
-In this project, the technology data is loaded asynchronously from a JSON file. The project uses React's `use()` for consuming the fetched promise, while `useEffect` is generally useful when managing data fetching and side effects in React applications.
-
----
-
 ## 5. Why do we need a unique key when rendering a list using map()?
 
 React needs a unique `key` to identify each item in a list.
 
 A unique key helps React understand which items have been added, removed, or changed, so it can update the UI efficiently.
-
-For example, this project uses the technology ID:
-
-```tsx
-AllTechnologies.map(technology => (
-    <AvailableTechnologiesCard
-        key={technology.id}
-        technology={technology}
-    />
-))
-```
-
-Using `technology.id` is better than using the array index because the ID uniquely identifies each technology.
-
----
 
 ## 6. What is conditional rendering? Give an example.
 
@@ -143,33 +94,13 @@ For example, in the **Your Stack** section, if there are no selected technologie
 )}
 ```
 
-Here, React displays different content depending on whether the user has selected any technologies.
-
----
-
 ## 7. How can you pass data from a parent component to a child component? How can you pass data from child to parent?
 
 A parent component can pass data to a child component using **props**.
 
-For example:
-
-```tsx
-<AvailableTechnologiesCard
-    technology={technology}
-    selectedTechnologies={selectedTechnologies}
-    setSelectedTechnologies={setSelectedTechnologies}
-/>
-```
-
-Here, the parent passes technology data and state-related information to the child.
-
 To communicate from child to parent, the parent can pass a **callback function** to the child through props.
 
 The child can then call that function when an event happens.
-
-In this project, `setSelectedTechnologies` is passed to child components, allowing child components to update the selected technologies maintained by the parent.
-
----
 
 ## 📁 Project Structure
 
