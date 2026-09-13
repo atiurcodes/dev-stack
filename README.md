@@ -4,11 +4,11 @@ Dev Stack is a responsive web application that helps developers explore differen
 
 ## 🌐 Live Website
 
-https://dev-stack-beryl-ten.vercel.app/
+[Visit Live Website](https://dev-stack-beryl-ten.vercel.app/)
 
 ## 📦 GitHub Repository
 
-https://github.com/atiurcodes/dev-stack
+[View GitHub Repository](https://github.com/atiurcodes/dev-stack)
 
 ---
 
@@ -155,7 +155,8 @@ The application adapts its layout for:
 
 ## 👨‍💻 Author
 
-**Atiur Rahman**
+* GitHub: [atiurcodes](https://github.com/atiurcodes)
+* LinkedIn: [Atiur Rahman](https://www.linkedin.com/in/atiur-rahman-71222a429/)
 
 Aspiring Full-Stack AI Web Engineer
 
