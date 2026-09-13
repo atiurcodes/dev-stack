@@ -10,9 +10,9 @@ const Banner = () => {
                         compare them side by side, and put together the stack that fits your
                         next project.</p>
                     <div className='flex flex-wrap justify-center md:justify-start gap-4 md:gap-5 mt-2 md:py-8'>
-                        <button className='px-6 py-3 rounded-xl brand-bg font-semibold text-white hover:opacity-90 hover:cursor-pointer 
+                        <button className='px-4 py-2 rounded-sm brand-bg font-semibold text-white hover:opacity-90 hover:cursor-pointer 
                         transition duration-200'>Explore Technologies</button>
-                        <button className="px-12 py-3 rounded-xl border border-secondary text-secondary font-semibold 
+                        <button className="px-6 py-2 rounded-sm border border-secondary text-secondary font-semibold 
                         hover:text-red-500 hover:cursor-pointer hover:border-red-400 transition duration-200">Learn More</button>
                     </div>
                 </div>

@@ -26,10 +26,10 @@ export default function AvailableTechnologiesCard({ technology, selectedTechnolo
                 <h2 className={`px-3 py-1 rounded-full ${badgeColors[technology.badge]}`}>{technology.badge}</h2>
             </div>
             <h2 className="text-xl font-bold text-primary">{technology.name}</h2>
-            <p className="text-[#64748B]">{technology.description}</p>
+            <p className="text-secondary leading-6 py-3 border-b border-gray-100 mb-3">{technology.description}</p>
             <div className="divider"></div>
-            <div className="flex flex-wrap items-center gap-3 pb-4">
-                <button className="bg-base-200 px-2 py-1 rounded-md  shrink-0">{technology.category}</button>
+            <div className="flex flex-wrap items-center justify-between gap-3 pb-4">
+                <button className="bg-gray-100 px-2 py-1 rounded-md shrink-0">{technology.category}</button>
                 <span className="text-secondary shrink-0">{technology.difficulty}</span>
                 <div className="flex items-center gap-2 shrink-0">
                     <span className="text-yellow-500 fill-yellow-500"><FaStar size={20} /></span>

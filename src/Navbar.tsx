@@ -59,17 +59,11 @@ const Navbar = () => {
 
                     {/* Desktop Buttons */}
                     <div className="hidden md:flex items-center gap-3 lg:gap-5">
-                        <button
-                            type="button"
-                            className="text-secondary font-semibold cursor-pointer px-4 py-2 rounded-2xl hover:bg-red-500 hover:text-white transition-all duration-300"
-                        >
-                            Sign In
-                        </button>
+                        <button className="text-secondary outline-none font-semibold cursor-pointer px-4 py-2 rounded-md hover:brand-bg 
+                        hover:text-white hover:opacity-90 transition-all duration-200">Sign In</button>
 
-                        <button
-                            type="button"
-                            className="bg-linear-to-r from-orange-500 via-pink-500 to-violet-500 text-white font-semibold cursor-pointer px-4 py-2 rounded-2xl hover:opacity-90 transition-all duration-300"
-                        >
+                        <button className="brand-bg text-white font-semibold 
+                        cursor-pointer px-4 py-2 rounded-md hover:opacity-90 transition-all duration-300">
                             Sign Up
                         </button>
                     </div>
